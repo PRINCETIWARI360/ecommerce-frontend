@@ -10,7 +10,9 @@ function Home() {
     axios
       .get("https://ecommerce-backend-qmf9.onrender.com/api/products")
       .then((res) => {
-        setProducts(res.data);
+        console.log(res.data);
+
+        setProducts(Array.isArray(res.data) ? res.data : []);
       })
       .catch((err) => {
         console.log(err);
@@ -18,7 +20,7 @@ function Home() {
   }, []);
 
   const filteredProducts = products.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase()),
+    item.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
