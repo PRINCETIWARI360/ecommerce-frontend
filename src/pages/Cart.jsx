@@ -19,7 +19,7 @@ function Cart() {
             <div className="row g-0">
               <div className="col-md-3">
                 <img
-                  src={`http://localhost:3000/images/${item.image}`}
+                  src={`https://ecommerce-backend-qmf9.onrender.com/images/${item.image}`}
                   className="img-fluid"
                 />
               </div>

@@ -8,7 +8,7 @@ function ProductCard({item}) {
     <div className="col-md-3 mb-4">
       <div className="card shadow-sm h-100">
         <img
-          src={`http://localhost:3000/images/${item.image}`}
+          src={`https://ecommerce-backend-qmf9.onrender.com/images/${item.image}`}
           className="card-img-top"
           style={{ height: "200px", objectFit: "cover" }}
         />

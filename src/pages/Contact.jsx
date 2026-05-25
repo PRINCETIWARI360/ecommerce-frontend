@@ -8,7 +8,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/api/contact", {
+      .post("https://ecommerce-backend-qmf9.onrender.com/api/contact", {
         name,
         email,
         message,

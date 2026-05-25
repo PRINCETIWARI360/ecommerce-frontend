@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3000/api/auth/login", {
+      .post("https://ecommerce-backend-qmf9.onrender.com/api/auth/login", {
         email,
         password,
       })

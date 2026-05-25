@@ -8,7 +8,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/products")
+      .get("https://ecommerce-backend-qmf9.onrender.com/api/products")
       .then((res) => {
         setProducts(res.data);
       })

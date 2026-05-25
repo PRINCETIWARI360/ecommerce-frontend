@@ -9,7 +9,7 @@ function Checkout() {
 
   const handleOrder = () => {
     axios
-      .post("http://localhost:3000/api/orders", { cart })
+      .post("https://ecommerce-backend-qmf9.onrender.com/api/orders", { cart })
       .then((res) => {
         alert(res.data);
       })
