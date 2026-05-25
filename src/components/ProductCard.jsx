@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-
 function ProductCard({item}) {
   const {addToCart} = useContext(CartContext);
 
@@ -8,7 +7,7 @@ function ProductCard({item}) {
     <div className="col-md-3 mb-4">
       <div className="card shadow-sm h-100">
         <img
-          src={`https://ecommerce-backend-qmf9.onrender.com/images/${item.image}`}
+          src={item.image}
           className="card-img-top"
           style={{ height: "200px", objectFit: "cover" }}
         />
